@@ -28,6 +28,8 @@
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+
 //
 // Override Bootstrap here
 //
@@ -82,10 +84,216 @@ $border-radius: .4rem;
 //
 
 body {
-  padding: 3rem 1.5rem;
+  font-size: 110%;
+  padding: 0;
+  color: #A59191;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
+a {
+  color: #A59191;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+  &:hover {
+    text-decoration: none;
+    color: #b58181;
+  }
+
+}
+
+// TYPOGRAPHY
+h1 {
+  font-weight: 300;
+  font-size: 3.8rem;
+  line-height: 1;
+}
+
+ul {
+  list-style-type: none;
+
+  &.prices {
+    margin-left: 15vw;
+  }
+}
+
+.bold {
+  font-weight: 400;
+}
+
+#estetica,#makeup,#naturopatia {background: #fff}
+#massaggi,#epilazione {background: #A59191; color: #fff}
+#contacts {background: #444;}
+
+// NAVIGATION
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+
+  .logo {
+    width: 300px;
+    background:url('/assets/images/logo.png') no-repeat;
+    background-size: contain;
+    
+  }
+
+  .address {
+
+  }
+}
+
+// STANDARD SECTION
+section {
+  height: 100vh;
+  padding: 2em;
+
+  &.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+// HERO SECTION
+section.hero {
+  background: url('/assets/images/hero.jpg') no-repeat center;
+  background-size: cover;
+
+  a { 
+    display: block;
+    margin-top: 2em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin-top: 40vh;
+    line-height: 1.2;
+  }
+
+  .scrolldown {
+    margin-top: 2em;
+    fill:#A59191;
+    animation: bounce-arrow 2s infinite ease-in-out;
+    &:hover {
+      fill: #000;
+    }
+  }
+
+  ul {
+    position: absolute;
+    top: 40vh;
+    left: 5vw;
+  }
+
+  .prenota {
+    position: fixed;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2;
+    bottom: 0;
+    right: 0;
+    padding: 0 2em;
+    background: #A59191;
+    color: #fff;
+
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+#epilazioneDef {
+  background: #529491;
+  color: #fff;
+  h1 {
+    padding: 1em 0;
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 200;
+    font-size: 1.7rem;
+  }
+
+}
+
+#contacts {
+  color: #fff;
+  padding-right: 0;
+  .one {
+    p {
+      font-weight: 400;
+      margin: 2em 0;
+
+      &:nth-child(2){margin-top: 5em;}
+    }
+
+    .social {
+      padding-top:100px;
+
+      a { display: inline-block; margin: 0 1em 0 0 }
+
+      .social-icon {
+        width: 50px;
+        fill: #fff;
+      }
+    }
+  }
+
+  .two{
+    .box {
+      position:relative;
+      height: 20em;
+      margin-top: 10em;
+      background: #fff;
+      width :100%;
+
+      .callme {
+        position:absolute;
+        top:3em;
+        left: -5em;
+        right: 0;
+        bottom: 3em;
+        padding: 2em;
+        background: #A59191;
+        color: #fff;
+
+        h2 {
+          font-weight: 500;
+          font-size:2.5rem;
+          padding-bottom: 0.5em;
+        }
+        p{
+          font-size: 2rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+
 
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
+}
+
+
+@keyframes bounce-arrow {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

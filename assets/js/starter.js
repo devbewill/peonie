@@ -20,3 +20,17 @@
 
 import "../../node_modules/bootstrap/js/dist/util.js";
 import "../../node_modules/bootstrap/js/dist/modal.js";
+
+
+function scrollNav() {
+    $('.nav a').on("click", function(){
+      $(".active").removeClass("active");     
+      $(this).addClass("active");
+      
+      $('html, body').stop(true).animate({
+        scrollTop: $($(this).attr('href')).offset().top - 0
+      }, 500);
+      return false;
+    });
+  }
+  scrollNav();

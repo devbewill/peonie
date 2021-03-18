@@ -1,55 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/starter.css" />
     <title>Bootstrap npm starter</title>
   </head>
   <body>
-    <div class="col-md-8 mx-auto">
-      <h1>Hello, world!</h1>
-      <p>You've successfully loaded up the Bootstrap npm starter project!</p>
-      <p>If this button looks blue and the text purple, you've done it.</p>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click me!</button>
+    <nav>
+      <div class="logo"></div>
+      <p class="address">
+        Via Carnazza 73/C<br />
+        Tremestieri etneo<br />
+        Catania
+      </p>
+    </nav>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+    <section class="hero centered">
+      <div class="col-md-10 mx-auto">
+        <h1>Ci prendiamo cura<br />della tua bellezza</h1>
+        <a href="#contacts">Vieni a trovarci</a>
+        <svg
+          class="scrolldown"
+          width="8"
+          height="39"
+          viewBox="0 0 8 39"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.64645 38.3536C3.84171 38.5488 4.15829 38.5488 4.35355 38.3536L7.53553 35.1716C7.7308 34.9763 7.7308 34.6597 7.53553 34.4645C7.34027 34.2692 7.02369 34.2692 6.82843 34.4645L4 37.2929L1.17157 34.4645C0.976311 34.2692 0.659728 34.2692 0.464466 34.4645C0.269204 34.6597 0.269204 34.9763 0.464466 35.1716L3.64645 38.3536ZM3.5 0L3.5 38H4.5L4.5 0L3.5 0Z"
+          />
+        </svg>
+      </div>
+      <ul class="nav">
+        <li><a href="#estetica" class="active">Estetica</a></li>
+        <li><a href="#solarium">Solarium</a></li>
+        <li><a href="#naturopatia">Naturopatia</a></li>
+      </ul>
+
+      <div class="prenota">Prenota al <span>3791404089</span></div>
+    </section>
+    <section id="estetica">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-7">
+          <h1>Manicure<br />e pedicure</h1>
+          <ul class="prices">
+            <li>Manicure classica 13 €</li>
+            <li>Manicure semipermanente 20 €</li>
+            <li>Manicure gel da 26 €</li>
+            <li>Ricostruzone in gel da 36 €</li>
+            <li>Rimozione trattamenti unghie da 13 €</li>
+            <li style="padding-top: 1em">Pedicure estetico 13 €</li>
+            <li>Pedicure correttivo 18 €</li>
+            <li>Pedicure semipermanente 25 €</li>
+            <li>Rimozione semipermanente da 13 €</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="massaggi">
+      <div class="row">
+        <div class="col-md-7 offset-1">
+          <h1>Massaggi e<br />trattamenti<br />estetici</h1>
+          <ul class="prices">
+            <li>Messaggio viso drenante da 14 €</li>
+            <li>Messaggio viso stretching da 16 €</li>
+            <li>Messaggio scrub 27 €</li>
+            <li>Messaggio distensivo 24 €</li>
+            <li>Messaggio drenante da 30 €</li>
+            <li>Messaggio stretching da 39 €</li>
+            <li>Messaggio modellante riducente da 49 €</li>
+            <li style="padding-top: 1em">Trattamento viso vacuum da 23 €</li>
+            <li>Trattamento viso dermopurificante da 27 €</li>
+            <li>Trattamento viso pelle sensibile da 27 €</li>
+            <li>Trattamento viso anti-age da 27 €</li>
+          </ul>
+        </div>
+        <div class="col"></div>
+      </div>
+    </section>
+
+    <section id="makeup">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-7">
+          <h1>Make up e<br />solarium</h1>
+          <ul class="prices">
+            <li>Manicure classica 13 €</li>
+            <li>Manicure semipermanente 20 €</li>
+            <li>Manicure gel da 26 €</li>
+            <li>Ricostruzone in gel da 36 €</li>
+            <li>Rimozione trattamenti unghie da 13 €</li>
+            <li style="padding-top: 1em">Pedicure estetico 13 €</li>
+            <li>Pedicure correttivo 18 €</li>
+            <li>Pedicure semipermanente 25 €</li>
+            <li>Rimozione semipermanente da 13 €</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="epilazione">
+      <div class="row">
+        <div class="col-md-7 offset-1">
+          <h1>Epilazione<br />tradizionale</h1>
+          <ul class="prices">
+            <li>Manicure classica 13 €</li>
+            <li>Manicure semipermanente 20 €</li>
+            <li>Manicure gel da 26 €</li>
+            <li>Ricostruzone in gel da 36 €</li>
+            <li>Rimozione trattamenti unghie da 13 €</li>
+            <li style="padding-top: 1em">Pedicure estetico 13 €</li>
+            <li>Pedicure correttivo 18 €</li>
+            <li>Pedicure semipermanente 25 €</li>
+            <li>Rimozione semipermanente da 13 €</li>
+          </ul>
+        </div>
+        <div class="col"></div>
+      </div>
+    </section>
+
+    <section id="epilazioneDef">
+      <div class="row justify-content-around">
+        <div class="col-12">
+          <h1 class="text-center">Scopri l'epilazione definitiva</h1>
+        </div>
+        <div class="col-md-5">
+          <p>
+            Il Laser a diodo Mantis HR Black Mamna garantisce un’epilazione
+            perfetta a tutti i fototipi.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <p>
+            Questa tecnologia, grazie all’alta potenza e un intervallo di tempo
+            brevissimo, consente di trattare efficacemente anche i peli più
+            sottili, come quelli del viso. Inoltre, l’esclusivo sistema di
+            raffreddamento assicura ottimi risultati fin dalla prima seduta in
+            maniera indolore.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="naturopatia">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-7">
+          <h1>Naturopatia</h1>
+          <ul class="prices">
+            <li>Manicure classica 13 €</li>
+            <li>Manicure semipermanente 20 €</li>
+            <li>Manicure gel da 26 €</li>
+            <li>Ricostruzone in gel da 36 €</li>
+            <li>Rimozione trattamenti unghie da 13 €</li>
+            <li style="padding-top: 1em">Pedicure estetico 13 €</li>
+            <li>Pedicure correttivo 18 €</li>
+            <li>Pedicure semipermanente 25 €</li>
+            <li>Rimozione semipermanente da 13 €</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="row">
+        <div class="col-md-7 offset-1 one">
+          <h1>Dove siamo</h1>
+          <p class="bold">
+            Via Carnazza 73/C<br />
+            Tremestieri etneo<br />
+            Catania
+          </p>
+          <p class="bold">
+            Vieni a trovarci<br />
+            dal lunedia al sabato<br />
+            alle 9,00 alle 18,30
+          </p>
+
+          <div class="social">
+            <a href="#" alt="facebook" target="_blank">
+              <svg
+              class="social-icon facebook"
+              version="1.1"
+              viewBox="0 0 455 455">
+              <path d="M0,0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893,35.582-79.475,79.475-79.475h62.025v64.622h-44.382
+                c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47,71.864h-59.051V455.73H455.73V0H0z"/>
+              </svg>
+            </a>
+            <a href="#" alt="linkedin" target="_blank"=>
+              <svg
+                class="social-icon linkedin"
+                viewBox="0 0 455 455"
+              >
+                <g>
+                  <path
+                    d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
+                  />
+                  <path
+                    d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+		 M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+		c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+		c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+		c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+		z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col two">
+          <div class="box">
+            <div class="callme">
+              <h2>Per prenotare</h2>
+              <p>379 1404089<br />                   
+                centroesteticopeonie@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <hr class="my-5">
-
-      <h2>Adding Bootstrap Icons</h2>
-      <p><a href="https://icons.getbootstrap.com">Bootstrap Icons</a> are included with the SVG sprite here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too. They're styleable with text utilities and more.</p>
-
-      <svg class="bi text-danger" width="32" height="32">
-        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#heart-fill"/>
-      </svg>
-      <svg class="bi text-dark" width="32" height="32">
-        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#toggles"/>
-      </svg>
-      <svg class="bi text-primary" width="32" height="32">
-        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#shop"/>
-      </svg>
-    </div>
-
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script> -->
     <script type="module" src="assets/js/starter.js"></script>
   </body>
 </html>
