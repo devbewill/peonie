@@ -23,7 +23,7 @@ import "../../node_modules/bootstrap/js/dist/modal.js";
 
 
 function scrollNav() {
-    $('.nav a').on("click", function(){
+    $('.nav a, .go-down').on("click", function(){
       $(".active").removeClass("active");     
       $(this).addClass("active");
       
