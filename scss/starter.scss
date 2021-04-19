@@ -465,6 +465,20 @@ section.hero {
   .hidden-on-desktop {
     display: block;
   }
+
+  .mobile-call {
+    position: fixed;
+    top: 7vh;
+    right: 1em;
+    z-index: 99999;
+    color: #fff;
+    background: $brown;
+    display: block;
+    height: 30px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    line-height: 34px;
+  }
   nav {
     position: relative;
     .logo {
